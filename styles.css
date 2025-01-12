@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 90vw; /* Increased from 1200px to 90% of viewport width */
     margin: 0 auto;
     padding: 20px;
     text-align: center;
@@ -21,7 +21,7 @@ h1 {
 #twitch-embed {
     position: relative;
     width: 100%;
-    max-width: 1100px;
+    max-width: 1600px; /* Increased from 1100px */
     margin: 0 auto;
     aspect-ratio: 16/9;
     background-color: #000;
@@ -54,6 +54,7 @@ h1 {
 @media (max-width: 768px) {
     .container {
         padding: 10px;
+        max-width: 100vw; /* Full width on mobile */
     }
 
     h1 {
