@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
         width: '100%',
         height: '100%',
         channel: 'kayski101',
-        parent: ['github.io', 'your-domain.com']  // We'll update this with your actual domain
+        parent: ['kamalroberts.com', 'www.kamalroberts.com']  // Updated with your domain
     };
 
     // Create the Twitch embed
