@@ -4,7 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
         height: '100%',
         channel: 'kayski101',
         parent: ['kamalroberts.com', 'www.kamalroberts.com'],
-        layout: 'video',  // This will show only the video player
+        layout: 'video-with-chat',
+        chat: 'hidden',
         theme: 'dark'
     };
 
