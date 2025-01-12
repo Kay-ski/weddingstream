@@ -1,12 +1,26 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    background-color: #f8f8f8;
+    background: url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=2000&q=80') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 0;
 }
 
 .container {
+    position: relative;
+    z-index: 1;
     max-width: 90vw; /* Increased from 1200px to 90% of viewport width */
     margin: 0 auto;
     padding: 20px;
@@ -14,8 +28,11 @@ body {
 }
 
 h1 {
-    color: #333;
+    font-family: 'Great Vibes', cursive;
+    color: #2c3e50;
     margin-bottom: 20px;
+    font-size: 3.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 #twitch-embed {
@@ -25,23 +42,24 @@ h1 {
     margin: 0 auto;
     aspect-ratio: 16/9;
     background-color: #000;
-    border-radius: 8px;
+    border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .stream-info {
     margin-top: 20px;
-    padding: 15px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 .stream-time {
-    font-size: 1.1em;
-    color: #666;
+    font-size: 1.2em;
+    color: #34495e;
     margin-bottom: 20px;
+    font-weight: 500;
 }
 
 .mobile-notice {
@@ -58,7 +76,7 @@ h1 {
     }
 
     h1 {
-        font-size: 1.5em;
+        font-size: 2.5em;
     }
 
     .mobile-notice {
@@ -69,7 +87,7 @@ h1 {
 /* Landscape Mode Notice */
 @media (max-width: 768px) and (orientation: portrait) {
     .mobile-notice {
-        color: #ff4444;
-        font-weight: bold;
+        color: #e74c3c;
+        font-weight: 500;
     }
 }
