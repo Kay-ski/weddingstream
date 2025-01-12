@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Wedding Live Stream</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <!-- Twitch Embed Script -->
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Our Wedding Live Stream</h1>
+        <p class="stream-time">Stream Time: <span id="current-time">{{ current_time }}</span></p>
+        
+        <!-- Twitch Stream Container -->
+        <div id="twitch-embed"></div>
+        
+        <div class="stream-info">
+            <p>Thank you for joining us on our special day! ❤️</p>
+            <p class="mobile-notice">For the best viewing experience, please rotate your device to landscape mode on mobile.</p>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
