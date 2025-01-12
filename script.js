@@ -3,7 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
         width: '100%',
         height: '100%',
         channel: 'kayski101',
-        parent: ['kamalroberts.com', 'www.kamalroberts.com']  // Updated with your domain
+        parent: ['kamalroberts.com', 'www.kamalroberts.com'],
+        layout: 'video',  // This will show only the video player
+        theme: 'dark'
     };
 
     // Create the Twitch embed
